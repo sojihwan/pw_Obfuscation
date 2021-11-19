@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
 
 int main(){
 	int r = 0; 
@@ -74,6 +75,7 @@ int main(){
 		if(a==4){
 			if(r==0){
 				system("pause");	
+				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);
 				printf("두 수를 입력하시오(100~1000사이로):\n");
 				int a,b;
 				long long pw;
@@ -120,6 +122,7 @@ int main(){
 			}
 			if(r==1){
 				system("pause");
+				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);
 				long long pw;
 				pw=1910;
 				printf("scp173이 사라졌다. 당신은 이때를 틈타 박사의 금고를 열려 한다.\n");
@@ -163,6 +166,7 @@ int main(){
 			}
 			if(r==2){	
 				system("pause");
+				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);
 				long long pw;
 				pw=15120;
 				printf("개발자의 나이 X 개발자의 눈의 수 X 개발자의 손가락X2(0010 1010)=pw\n");
@@ -205,7 +209,8 @@ int main(){
 				}
 			}
 			if(r==3){
-				system("pause");	
+				system("pause");
+				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);	
 				long long pw;
 				pw=24610;
 				printf("통통 통통통통 통통통통통통 토로로로로로로ㅗ로ㅗ로롤=pw\n");
@@ -247,7 +252,8 @@ int main(){
 				}
 			}
 			if(r==4){
-				system("pause");	
+				system("pause");
+				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);	
 				long long pw;
 				pw=7373;
 				printf("개발자가 좋아하는 숫자는\n");
