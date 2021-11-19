@@ -2,8 +2,9 @@
 #include <windows.h>
 
 int main(){
+	system("color 20");
 	for(int i=0; ;i++){
-	
+		
 		int a;
 		printf("1:난독화 2: 풀기 3:비번 입력 4:종료 :");
 		scanf("%d",&a); 
@@ -34,16 +35,28 @@ int main(){
 			printf("%lld",&pw);
 			system("cls");
 			for(int i=1; ; i++){
-				printf("비밀번호를 입력하세요:");
+				printf("비밀번호를 입력하세요(4자리):");
 				scanf("%lld",&hpw);
 				if(hpw==pw){
+					printf("정답입니다\n");
 					break;
+					system("pause");
+					system("cls");
 				}
+				if(hpw==4&&i>=5){
+						printf("종료합니다. 비밀번호는 %d였습니다.\n",pw);
+						break;
+						system("pause");
+						system("cls");
+					}
 				printf("%d회 틀렸습니다.\n",i);
 				if(i>=5){
-					printf("3초 후 시도해 주세요\n");
-					Sleep(3000);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
+					printf("%d초 후 시도해 주세요\n",i);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
+					Sleep(i*1000);
 					system("pause");
+					printf("종료할려면 4을 눌러주세요.\n") ;
 				}
 			}
 		} 
