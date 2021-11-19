@@ -130,7 +130,7 @@ int main(){
 					if(hpw==pw){
 						printf("정답입니다\n");
 						printf("금고가 열리고 당신은 카드키를 얻어다");
-						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36); 
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
 						printf("끈적이는 느낌에 밑을 보니 검은 엑체가 있어다.\n 당신은 즉사하였다."); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
@@ -173,7 +173,7 @@ int main(){
 					if(hpw==pw){
 						printf("정답입니다\n");
 						printf("금고가 열리고 당신은 흰트를 얻어다\n");
-						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36); 
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
 						printf("트흰트흰흰트흰트흰트흰트흰트흰트흰트흰트흰트흰트흰트흰트흰트흰트흰트\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
@@ -215,7 +215,7 @@ int main(){
 					if(hpw==pw){
 						printf("정답입니다\n");
 						printf("금고가 열리고 당신은 흰트를 얻어다\n");
-						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36); 
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
 						printf("4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
@@ -257,7 +257,7 @@ int main(){
 					if(hpw==pw){
 						printf("정답입니다\n");
 						printf("금고가 열리고 당신은 흰트를 얻어다\n");
-						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36); 
+						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
 						printf("4을 계속 입력하시오\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
