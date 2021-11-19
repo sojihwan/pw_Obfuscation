@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <stdlib.h>
 #include <time.h>
+#include <mmsystem.h>
 
 int main(){
 	int r = 0; 
