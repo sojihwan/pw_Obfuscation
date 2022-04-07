@@ -4,6 +4,7 @@
 int main(){
 	system("color 20");
 	for(int i=0; ;i++){
+		
 		int a;
 		printf("1:난독화 2: 풀기 3:비번 입력4:종료 :");
 		scanf("%d",&a); 
