@@ -5,6 +5,7 @@
 #include <mmsystem.h>
 #pragma comment(lib, "winmm.lib")
 
+
 int main(){
 	int r = 0; 
 	system("color 20");
@@ -12,10 +13,10 @@ int main(){
 		srand(time(NULL)); 
 		r = rand()%5;
 		int a;
-		printf("1:³­µ¶È­ 2: Ç®±â 3:ºñ¹ø ÀÔ·Â4:´©¸£Áö ¸¶½Ã¿À 5:Á¾·á :");
+		printf("1:ï¿½ï¿½ï¿½ï¿½È­ 2: Ç®ï¿½ï¿½ 3:ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½4:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ 5:ï¿½ï¿½ï¿½ï¿½ :");
 		scanf("%d",&a); 
 		if(a==1){
-			printf("¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä(4ÀÚ¸® ºñ¹Ð¹øÈ£):");
+			printf("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½(4ï¿½Ú¸ï¿½ ï¿½ï¿½Ð¹ï¿½È£):");
 			long long pw;
 			scanf("%lld",&pw);
 			pw=pw*524287;
@@ -24,7 +25,7 @@ int main(){
 			system("cls");
 		} 
 		if(a==2){
-			printf("¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä(Å°):");
+			printf("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½(Å°):");
 			long long pw;
 			scanf("%x",&pw);
 			pw=pw/524287;
@@ -33,7 +34,7 @@ int main(){
 			system("cls");
 		}
 		if(a==3){
-			printf("³­µ¶È­ µÈ Å°¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä:");
+			printf("ï¿½ï¿½ï¿½ï¿½È­ ï¿½ï¿½ Å°ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½:");
 			long long pw;
 			long long hpw;
 			scanf("%x",&pw);
@@ -41,32 +42,32 @@ int main(){
 			printf("%lld",&pw);
 			system("cls");
 			for(int i=1; ; i++){
-				printf("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä(4ÀÚ¸®):");
+				printf("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½(4ï¿½Ú¸ï¿½):");
 				scanf("%lld",&hpw);
 				if(hpw==pw){
-					printf("Á¤´äÀÔ´Ï´Ù\n");
+					printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½\n");
 					system("pause");
 					system("cls");
 					break;
 				}
 				if(hpw==4&&i>=5){
-						printf("Á¾·áÇÕ´Ï´Ù. ºñ¹Ð¹øÈ£´Â %d¿´½À´Ï´Ù.\n",pw);
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n",pw);
 						system("pause");
 						system("cls");
 						break;
 					}
-				printf("%dÈ¸ Æ²·È½À´Ï´Ù.\n",i);
+				printf("%dÈ¸ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.\n",i);
 				if(i>=5){
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-					printf("%dÃÊ ÈÄ ½ÃµµÇØ ÁÖ¼¼¿ä\n",i);
+					printf("%dï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½\n",i);
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 					Sleep(i*1000);
 					system("pause");
-					printf("Á¾·áÇÒ·Á¸é 4À» ´­·¯ÁÖ¼¼¿ä.\n") ;
+					printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½ 4ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.\n") ;
 				}
 				if(i>=10){
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-					printf("ÀÌ°èÁ¤Àº Àá°å½À´Ï´Ù.\n");
+					printf("ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n");
 					system("pause");
 					exit(0);
 				}
@@ -76,45 +77,45 @@ int main(){
 			if(r==0){
 				system("pause");	
 				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);
-				printf("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À(100~1000»çÀÌ·Î):\n");
+				printf("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½(100~1000ï¿½ï¿½ï¿½Ì·ï¿½):\n");
 				int a,b;
 				long long pw;
 				scanf("%d %d",&a,&b);
 				pw=a*b/2;
-				printf("´« ¾Õ¿¡ ¼¼¸ðÀÇ ±Ý°í°¡ ÀÖ´Ù ¿­¾îº¸ÀÚ\n");
+				printf("ï¿½ï¿½ ï¿½Õ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½îº¸ï¿½ï¿½\n");
 				long long hpw;
 				
 				for(int i=1; ; i++){
-					printf("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					printf("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:");
 					scanf("%lld",&hpw);
 					if(hpw==pw){
-						printf("Á¤´äÀÔ´Ï´Ù\n");
-						printf("±Ý°í°¡ ¿­¸®°í ´ç½ÅÀº º¸¸é ¾ÈµÉ°ÍÀ» º¸¾Ò´Ù");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½\n");
+						printf("ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµÉ°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò´ï¿½");
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35);
-						printf("scp-096ÀÇ »çÁøÀ» º¸¾Ò´Ù. ´ç½ÅÀº ©°Ü Á×¾ú´Ù.\n"); 
+						printf("scp-096ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½.\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
 						system("cls");
 					break;
 					}
 					if(hpw==4&&i>=5){
-							printf("½Ã¹Ä·¹ÀÌ¼ÇÀ»Á¾·áÇÕ´Ï´Ù. ºñ¹Ð¹øÈ£´Â %d¿´½À´Ï´Ù.\n",pw);
+							printf("ï¿½Ã¹Ä·ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n",pw);
 							system("pause");
 							system("cls");
 							break;
 						}
-					printf("%dÈ¸ Æ²·È½À´Ï´Ù.\n",i);
+					printf("%dÈ¸ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.\n",i);
 					if(i>=5){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("%dÃÊ ÈÄ ½ÃµµÇØ ÁÖ¼¼¿ä\n",i);
+						printf("%dï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½\n",i);
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						Sleep(i*1000);
 						system("pause");
 					}
 					if(i>=10){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("ÀÌ°èÁ¤Àº Àá°å½À´Ï´Ù.\n");
-						printf("¼¼¸ðÇÑÅ× ÃÑ»ì ´çÇß½À´Ï´Ù..\n");
+						printf("ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ»ï¿½ ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½..\n");
 						system("pause");
 						exit(0);
 					}
@@ -125,40 +126,40 @@ int main(){
 				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);
 				long long pw;
 				pw=1910;
-				printf("scp173ÀÌ »ç¶óÁ³´Ù. ´ç½ÅÀº ÀÌ¶§¸¦ Æ´Å¸ ¹Ú»çÀÇ ±Ý°í¸¦ ¿­·Á ÇÑ´Ù.\n");
+				printf("scp173ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¶ï¿½ï¿½ï¿½ Æ´Å¸ ï¿½Ú»ï¿½ï¿½ï¿½ ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.\n");
 				long long hpw;
 				
 				for(int i=1; ; i++){
-					printf("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					printf("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:");
 					scanf("%lld",&hpw);
 					if(hpw==pw){
-						printf("Á¤´äÀÔ´Ï´Ù\n");
-						printf("±Ý°í°¡ ¿­¸®°í ´ç½ÅÀº Ä«µåÅ°¸¦ ¾ò¾î´Ù");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½\n");
+						printf("ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
-						printf("²öÀûÀÌ´Â ´À³¦¿¡ ¹ØÀ» º¸´Ï °ËÀº ¿¢Ã¼°¡ ÀÖ¾î´Ù.\n ´ç½ÅÀº Áï»çÇÏ¿´´Ù."); 
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½.\n ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½."); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
 						system("cls");
 					break;
 					}
 					if(hpw==4&&i>=8){
-							printf("½Ã¹Ä·¹ÀÌ¼ÇÀ» Á¾·áÇÕ´Ï´Ù. ºñ¹Ð¹øÈ£´Â %d¿´½À´Ï´Ù.\n",pw);
+							printf("ï¿½Ã¹Ä·ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n",pw);
 							system("pause");
 							system("cls");
 							break;
 						}
-					printf("%dÈ¸ Æ²·È½À´Ï´Ù.\n",i);
+					printf("%dÈ¸ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.\n",i);
 					if(i>=5){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("%dÃÊ ÈÄ ½ÃµµÇØ ÁÖ¼¼¿ä\n",i);
+						printf("%dï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½\n",i);
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						Sleep(i*1000);
 						system("pause");
 					}
 					if(i>=10){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("ÀÌ°èÁ¤Àº Àá°å½À´Ï´Ù.\n");
-						printf("´ç½ÅÀº Æ¯¹«´ëÀÇ ÃÑ¿¡ ¬¾Æ »ç¸ÁÇÏ¼Ì½À´Ï´Ù.\n");
+						printf("ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½.\n");
 						system("pause");
 						exit(0);
 					}
@@ -169,40 +170,40 @@ int main(){
 				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);
 				long long pw;
 				pw=15120;
-				printf("°³¹ßÀÚÀÇ ³ªÀÌ X °³¹ßÀÚÀÇ ´«ÀÇ ¼ö X °³¹ßÀÚÀÇ ¼Õ°¡¶ôX2(0010 1010)=pw\n");
+				printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ X ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ X ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ°ï¿½ï¿½ï¿½X2(0010 1010)=pw\n");
 				long long hpw;
 				
 				for(int i=1; ; i++){
-					printf("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					printf("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:");
 					scanf("%lld",&hpw);
 					if(hpw==pw){
-						printf("Á¤´äÀÔ´Ï´Ù\n");
-						printf("±Ý°í°¡ ¿­¸®°í ´ç½ÅÀº ÈòÆ®¸¦ ¾ò¾î´Ù\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½\n");
+						printf("ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
-						printf("Æ®ÈòÆ®ÈòÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®ÈòÆ®\n"); 
+						printf("Æ®ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½Æ®\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
 						system("cls");
 					break;
 					}
 					if(hpw==4&&i>=8){
-							printf("½Ã¹Ä·¹ÀÌ¼ÇÀ» Á¾·áÇÕ´Ï´Ù. ºñ¹Ð¹øÈ£´Â %d¿´½À´Ï´Ù.\n",pw);
+							printf("ï¿½Ã¹Ä·ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n",pw);
 							system("pause");
 							system("cls");
 							break;
 						}
-					printf("%dÈ¸ Æ²·È½À´Ï´Ù.\n",i);
+					printf("%dÈ¸ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.\n",i);
 					if(i>=5){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("%dÃÊ ÈÄ ½ÃµµÇØ ÁÖ¼¼¿ä\n",i);
+						printf("%dï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½\n",i);
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						Sleep(i*1000);
 						system("pause");
 					}
 					if(i>=10){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("ÀÌ°èÁ¤Àº Àá°å½À´Ï´Ù.\n");
-						printf("´ç½ÅÀº °³¹ßÀÚÀÇ ÀºÃÑ¿¡ ¬¾Æ »ç¸ÁÇÏ¼Ì½À´Ï´Ù.\n");
+						printf("ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½.\n");
 						system("pause");
 						exit(0);
 					}
@@ -213,14 +214,14 @@ int main(){
 				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);	
 				long long pw;
 				pw=24610;
-				printf("ÅëÅë ÅëÅëÅëÅë ÅëÅëÅëÅëÅëÅë Åä·Î·Î·Î·Î·Î·Î¤Ç·Î¤Ç·Î·Ñ=pw\n");
+				printf("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Î·Î·Î·Î·Î·Î¤Ç·Î¤Ç·Î·ï¿½=pw\n");
 				long long hpw;
 				for(int i=1; ; i++){
-					printf("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					printf("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:");
 					scanf("%lld",&hpw);
 					if(hpw==pw){
-						printf("Á¤´äÀÔ´Ï´Ù\n");
-						printf("±Ý°í°¡ ¿­¸®°í ´ç½ÅÀº ÈòÆ®¸¦ ¾ò¾î´Ù\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½\n");
+						printf("ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
 						printf("4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
@@ -229,23 +230,23 @@ int main(){
 					break;
 					}
 					if(hpw==4&&i>=8){
-							printf("½Ã¹Ä·¹ÀÌ¼ÇÀ» Á¾·áÇÕ´Ï´Ù. ºñ¹Ð¹øÈ£´Â %d¿´½À´Ï´Ù.\n",pw);
+							printf("ï¿½Ã¹Ä·ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n",pw);
 							system("pause");
 							system("cls");
 							break;
 						}
-					printf("%dÈ¸ Æ²·È½À´Ï´Ù.\n",i);
+					printf("%dÈ¸ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.\n",i);
 					if(i>=5){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("%dÃÊ ÈÄ ½ÃµµÇØ ÁÖ¼¼¿ä\n",i);
+						printf("%dï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½\n",i);
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						Sleep(i*1000);
 						system("pause");
 					}
 					if(i>=10){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("ÀÌ°èÁ¤Àº Àá°å½À´Ï´Ù.\n");
-						printf("´ç½ÅÀº....¹¹¿´Áö\n±â.. ±â¾ïÀÌ ¾Ê³ª... ¾îÂ·µç µÚÁü ¤µ¤¡\n");
+						printf("ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½....ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½.. ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê³ï¿½... ï¿½ï¿½Â·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
 						system("pause");
 						exit(0);
 					}
@@ -256,39 +257,39 @@ int main(){
 				PlaySound(TEXT("mymusic.wav"), NULL, SND_ASYNC | SND_LOOP);	
 				long long pw;
 				pw=7373;
-				printf("°³¹ßÀÚ°¡ ÁÁ¾ÆÇÏ´Â ¼ýÀÚ´Â\n");
+				printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ú´ï¿½\n");
 				long long hpw;
 				for(int i=1; ; i++){
-					printf("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+					printf("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½:");
 					scanf("%lld",&hpw);
 					if(hpw==pw){
-						printf("Á¤´äÀÔ´Ï´Ù\n");
-						printf("±Ý°í°¡ ¿­¸®°í ´ç½ÅÀº ÈòÆ®¸¦ ¾ò¾î´Ù\n");
+						printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½\n");
+						printf("ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n");
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),35); 
-						printf("4À» °è¼Ó ÀÔ·ÂÇÏ½Ã¿À\n"); 
+						printf("4ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½\n"); 
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						system("pause");
 						system("cls");
 					break;
 					}
 					if(hpw==4&&i>=8){
-							printf("½Ã¹Ä·¹ÀÌ¼ÇÀ» Á¾·áÇÕ´Ï´Ù. ºñ¹Ð¹øÈ£´Â %d¿´½À´Ï´Ù.\n",pw);
+							printf("ï¿½Ã¹Ä·ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ %dï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n",pw);
 							system("pause");
 							system("cls");
 							break;
 						}
-					printf("%dÈ¸ Æ²·È½À´Ï´Ù.\n",i);
+					printf("%dÈ¸ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.\n",i);
 					if(i>=5){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("%dÃÊ ÈÄ ½ÃµµÇØ ÁÖ¼¼¿ä\n",i);
+						printf("%dï¿½ï¿½ ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½\n",i);
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),32);
 						Sleep(i*1000);
 						system("pause");
 					}
 					if(i>=10){
 						SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),36);
-						printf("ÀÌ°èÁ¤Àº Àá°å½À´Ï´Ù.\n");
-						printf("¾î¶»°Ô ´Ï°¡.. ´Ï°¡ ÄÀ Á×¾î¶ó ÀÌ³ð¾Æ ÅÁ ÅÁ ÅÁ\n");
+						printf("ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n");
+						printf("ï¿½î¶»ï¿½ï¿½ ï¿½Ï°ï¿½.. ï¿½Ï°ï¿½ ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ ï¿½Ì³ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½\n");
 						system("pause");
 						exit(0);
 					}
@@ -296,7 +297,7 @@ int main(){
 			}
 		} 
 		if(a==5){
-			printf("Á¾·áÇÕ´Ï´Ù.");
+			printf("ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			break;
 		}
 	}
