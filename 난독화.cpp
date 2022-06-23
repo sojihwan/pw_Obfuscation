@@ -6,6 +6,7 @@
 #pragma comment(lib, "winmm.lib")
 
 
+
 int main(){
 	int r = 0; 
 	system("color 20");
