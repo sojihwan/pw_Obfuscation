@@ -8,6 +8,7 @@
 
 
 
+
 int main(){
 	int r = 0; 
 	system("color 20");
